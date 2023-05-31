@@ -1,0 +1,6 @@
+Connect
+	psql --username=freecodecamp --dbname=postgres
+Apply
+	psql -U postgres < [database.sql]
+Save
+	pg_dump -cC --inserts -U freecodecamp [dbname] > [database.sql]
